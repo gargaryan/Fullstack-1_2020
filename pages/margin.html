@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin-padding</title>
+    <style>
+      /* universal extra space removal  */
+        *
+        {
+            margin: 0px;
+            padding: 0px;
+        }
+        .box
+        {
+            border:3px solid grey;
+            width: 500px;
+            margin:50px;
+            padding: 10px; 
+            /* the shape of box will destroyed its gonna be 526 rather it is 500   or img become  small*/
+
+        }
+        .box p
+        {
+            border: 3px solid red;
+            margin-top: 20px;
+            margin-right: 50px;
+            margin-bottom: 30px;
+            margin-left: 10px;
+            padding: 25px;
+            text-align: justify;
+        
+ 
+            
+        }
+        .box img
+        {
+
+            margin:10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="../Images/css logo.jpg" width="480px" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ipsam consequuntur aperiam sunt cupiditate labore veritatis hic, officiis quos sint, laudantium ipsa eius aspernatur neque corporis iure reprehenderit eum odio reiciendis quaerat necessitatibus minus delectus nobis! Corporis, sint nisi id quae optio accusantium qui voluptate sapiente quaerat fugiat dolorem reiciendis?</p>
+        <p style="margin-top: 50px;"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam amet voluptatum illo modi, possimus dicta obcaecati doloribus fugit voluptatem hic dignissimos, sequi accusantium, iste voluptate. Magnam atque neque aperiam assumenda quas illo consequuntur aut odit quibusdam error delectus, ullam laudantium. Id placeat dicta cum maxime adipisci corrupti, est similique laudantium.</p>
+    </div>
+</body>
+</html>
