@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive -layout</title>
+    <style>
+    *
+    {
+        margin: 0;
+        padding: 0;
+    }
+    #outer
+    {
+        border:solid #8bc34a;
+        width:1000px;
+        margin:  0px auto;
+        padding:15px;
+        
+    }
+    #header
+    {
+       
+        background-color: lightgrey;
+        width:100%;
+        border-radius: 15px;
+        height:50px;
+        /* Thease three properties make our content at the centre of div tag */ 
+        display:flex;
+        /*justify :from this horizontal centre*/
+        justify-content: center;
+        /*vertically centre*/
+        align-items: center;
+        color:white;
+        font-size: 30px;
+        margin-bottom: 15px;
+        
+    }
+    #content
+    {
+      
+       width:100%;
+      
+       margin-bottom: 15px;
+    }
+    /*through this we can  assign the property of child to their parents*/
+   #content:after
+    {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    #leftside
+    {
+       
+        width: 20%;
+        height: 515px;
+        float:left;
+
+
+    }
+    
+    #nav
+    {
+        width: 100%;
+        height: 300px;
+        background-color: purple;
+        border-radius: 15px;
+         /* Thease three properties make our content at the centre of div tag */ 
+         display:flex;
+        /*justify :from this horizontal centre*/
+        justify-content: center;
+        /*vertically centre*/
+        align-items: center;
+        margin-bottom: 5px;
+        font-size: 30px;
+        color: white;
+
+        
+    }
+    #news
+    {
+        widows: 100%;
+        height: 210px;
+        display:flex;
+        /*justify :from this horizontal centre*/
+        justify-content: center;
+        /*vertically centre*/
+        align-items: center;
+        border-radius: 15px;
+        background-color: orangered;
+        font-size: 30px;
+        color: white;
+
+    }
+
+    #rightside
+    {
+       
+        width: 78%;
+        height: 515px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        float:right;
+        background-color: goldenrod;
+        color:white;
+        font-size: 30px;
+        border-radius: 15px;
+
+        
+    }
+    #footer
+    {
+        
+        background-color: skyblue;
+        width:100%;
+        border-radius: 15px;
+        height:50px;
+        /* Thease three properties make our content at the centre of div tag */ 
+        display:flex;
+        /*justify :from this horizontal centre*/
+        justify-content: center;
+        /*vertically centre*/
+        align-items: center;
+        color:white;
+        font-size: 30px;
+        
+        
+
+    }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div id="outer">
+         <div id="header">header</div>
+         <div id="content">
+            <div id="leftside">
+                <div id="nav">Navigation</div>
+                <div id="news">News</div>
+            </div>
+            <div id="rightside">Main Content</div>
+         </div>
+         <div id="footer">Footer</div>  
+    </div>  
+</body>
+</html>
