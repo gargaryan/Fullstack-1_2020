@@ -32,8 +32,6 @@
             color:white;
             font-size: 40px;
             margin-bottom: 15px;
-            
-
         }
         #Banner
         {
@@ -46,69 +44,31 @@
             color:white;
             font-size: 40px;
             margin-bottom: 15px;
-
         }
         #section1
         {
             width:100%;
             height:100px;
             margin-bottom:15px;
+            display: flex;
             
-            
-            
-      
         }
-        #box1
+        #box
         {
-
             width:75px;
             height:75px;
             border-radius:50%;
             background-color: yellow;
             margin-left:134px;
-            margin-right:134px;
+           /* margin-right:134px;*/
             margin-top:12.5px;
             margin-bottom:12.5px;
-        
-            float: left;
-            
-            
-
+            /*float:left;*/
+            justify-content: space-evenly;/* sso from this first we have to   parent div we flexible then 
+            inside div can automatically  arrangered one by one in  well mannerre by justify conent no
+            need to use float property*/
         }
-        #box2
-        {
-            width:75px;
-            height:75px;
-            border-radius:50%;
-            background-color: yellow;
-            float:right;
-            margin-right:134px;
-            margin-top:12.5px;
-            margin-bottom:12.5px;
-        }
-        #box3
-        {
-            width:75px;
-            height:75px;
-            border-radius:50%;
-            background-color: yellow;
-            float:right;
-            margin-right:134px;
-            margin-top:12.5px;
-            margin-bottom:12.5px;
-        }
-        #box4
-        {
-            width:75px;
-            height:75px;
-            border-radius:50%;
-            background-color: yellow;
-            float:right;
-            margin-right:134px;
-            margin-top:12.5px;
-            margin-bottom:12.5px;
-        
-        }
+    
         #section2:after
     {
         content: '';
@@ -145,10 +105,10 @@
             margin-right: 10px;
             margin-top: 10px;
             margin-bottom: 10px;
-            
             float:right;
+        
         }
-        #Article-1
+        #Article
         {
             
             width:467.5px;
@@ -160,91 +120,30 @@
             align-items: center;
             color:white;
             font-size: 40px;
-
-
         }
-        #Article-2
-        {
-            
-            width:467.5px;
-            height:86.87px;
-            margin-bottom: 10px;
-            background-color: brown;
-            display:flex;
-            justify-content: center;
-            align-items: center;
-            color:white;
-            font-size: 40px;
-
-
-        }
-        #Article-3
-        {
-            
-            width:467.5px;
-            height:68.87px;
-            
-            background-color: brown;
-            display:flex;
-            justify-content: center;
-            align-items: center;
-            color:white;
-            font-size: 40px;
-
-
-        }
+     
         #section3
         {
             
             width: 100%;
             height: 200px;
             margin-bottom: 15px;
+            display:flex;
 
         }
-        #rect1
+        #rect
         {
-            width: 217.5px;
+            width: 225.5px;
             height:180px;
             margin-left:20px;
-            margin-right:20px;
+           /* margin-right:20px;*/
             margin-top:10px;
             margin-bottom: 10px;
-            float:left;
+            /*float:left;*/
             background-color: orangered;
+           justify-content: space-evenly;
         }
-        #rect2
-        {
-            width: 217.5px;
-            height:180px;
-            margin-right:20px;
-            margin-top:10px;
-            margin-bottom: 10px;
-            float:right;
-            background-color: orangered;
-
-        }
-        #rect3
-        {
-            width: 217.5px;
-            height:180px;
-            margin-right:20px;
-            margin-top:10px;
-            margin-bottom: 10px;
-            float:right;
-            background-color: orangered;
-
-        }
-        #rect4
-        {
-            width: 217.5px;
-            height:180px;
-            margin-right:20px;
-            margin-top:10px;
-            margin-bottom: 10px;
-            float:right;
-            background-color: orangered;
-
-        }
+    
         #footer
         {
             width:100%;
@@ -255,41 +154,36 @@
             color:white;
             font-size: 40px;
             margin-bottom: 15px;
-        
-
-
         }
-
-</style>
+    </style>
 </head>
-
 <body>
     <div id="outer">
         <div id="header">Header</div>
         <div id="Banner">Banner</div>
         <h1>Section-1</h1>
         <div id="section1">
-            <div id="box1"></div>
-            <div id="box2"></div>
-            <div id="box3"></div>
-            <div id="box4"></div>
+            <div id="box"></div>
+            <div id="box"></div>
+            <div id="box"></div>
+            <div id="box"></div>
         </div>
         <h1>Section-2</h1>
 
         <div id="section2">
             <div id="leftside">Main Content</div>
             <div id="rightside">
-                <div id="Article-1">Article-1</div>
-                <div id="Article-2">Article-2</div>
-                <div id="Article-3">Article-3</div>
+                <div id="Article">Article-1</div>
+                <div id="Article">Article-2</div>
+                <div id="Article">Article-3</div>
             </div>
         </div>
         <h1>Section-3</h1>
         <div id="section3">
-            <div id="rect1"></div>
-            <div id="rect2"></div>
-            <div id="rect3"></div>
-            <div id="rect4"></div>
+            <div id="rect"></div>
+            <div id="rect"></div>
+            <div id="rect"></div>
+            <div id="rect"></div>
         </div>
         <h1>Section-4</h1>
         <div id="footer">Footer</div>

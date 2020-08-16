@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-8</title>
+    <style>
+        *
+        {
+            margin:0;
+            padding:0;
+        }
+        #outer
+        {
+            padding:15px;
+            width:1000px;
+            margin-left:50px;
+
+        }
+        h1
+        {
+            color:black;
+            text-align:center;
+        }
+        #header
+        {
+            width:100%;
+           /* display:flex;
+            justify-content: center;
+            align-items: center;
+            background-color: lightslategray;
+            color:white;
+            font-size: 40px;*/
+            margin-bottom: 15px;
+        }
+        ul
+        {
+            list-style: none;
+            padding: 0;
+            overflow: hidden;
+            width: 100%;
+            background-color:lightgray;
+
+        }
+        ul li
+        {
+            display: inline-block;
+            padding: 15px 10px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            text-transform: uppercase;
+            
+        }
+        ul li a
+        {
+            text-decoration: none;
+            display: block;
+            margin-left:90px;
+
+        }
+
+        
+        #Banner
+        {
+            width:100%;
+            height: 100vh;
+            background-image: url(../Images/bannerpic.png);
+            background-size: cover;
+
+          /*  display:flex;
+            justify-content: center;
+            align-items: center;
+            color:white;
+            font-size: 40px;*/
+            margin-bottom: 15px;
+        }
+       
+        #section1
+        {
+            width:100%;
+            height:100px;
+            margin-bottom:15px;
+            display: flex;
+            
+        }
+        #box4
+        {
+            width:75px;
+            height:75px;
+            border-radius:50%;
+            background-image: url(../Images/box4.png);
+            background-size: cover;
+            margin-left:134px;
+           /* margin-right:134px;*/
+            margin-top:12.5px;
+            margin-bottom:12.5px;
+            /*float:left;*/
+            justify-content: space-evenly;/* sso from this first we have to   parent div we flexible then 
+            inside div can automatically  arrangered one by one in  well mannerre by justify conent no
+            need to use float property*/
+        }
+        #box1
+        {
+            width:75px;
+            height:75px;
+            border-radius:50%;
+            background-image: url(../Images/box1.png);
+            background-size: cover;
+            margin-left:134px;
+           /* margin-right:134px;*/
+            margin-top:12.5px;
+            margin-bottom:12.5px;
+            /*float:left;*/
+            justify-content: space-evenly;/* sso from this first we have to   parent div we flexible then 
+            inside div can automatically  arrangered one by one in  well mannerre by justify conent no
+            need to use float property*/
+        }
+        #box2
+        {
+            width:75px;
+            height:75px;
+            border-radius:50%;
+            background-image: url(../Images/box2.png);
+            background-size: cover;
+            margin-left:134px;
+           /* margin-right:134px;*/
+            margin-top:12.5px;
+            margin-bottom:12.5px;
+            /*float:left;*/
+            justify-content: space-evenly;/* sso from this first we have to   parent div we flexible then 
+            inside div can automatically  arrangered one by one in  well mannerre by justify conent no
+            need to use float property*/
+        }
+        #box3
+        {
+            width:75px;
+            height:75px;
+            border-radius:50%;
+            background-image: url(../Images/box3.png);
+            background-size: cover;
+            margin-left:134px;
+           /* margin-right:134px;*/
+            margin-top:12.5px;
+            margin-bottom:12.5px;
+            /*float:left;*/
+            justify-content: space-evenly;/* sso from this first we have to   parent div we flexible then 
+            inside div can automatically  arrangered one by one in  well mannerre by justify conent no
+            need to use float property*/
+        }
+    
+    
+        #section2:after
+    {
+        content: '';
+        display: block;
+        clear: both;
+    }
+        #section2
+        {
+            width:100%;
+            height:300px;
+        
+        }
+        #leftside
+        {
+            
+            width:467.5px;
+            height:100vh;
+            margin-left:10px;
+            margin-top:10px;
+            margin-bottom:10px;
+            margin-right:15px;
+            /*display: flex;
+            justify-content: center;
+            align-items: center;*/
+            color: white;
+            background-color: lightslategray;
+            float:left;
+            overflow: hidden;
+        }
+        #rightside
+        {
+            
+            width:467.5px;
+            height:100vh;
+            margin-right: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            float:right;
+        
+        }
+        #Article1
+        {
+            
+            width:467.5px;
+            height:28.33vh;
+            margin-bottom: 5vh;
+            background-image: url(../Images/artical1.png);
+            background-size: cover;
+          /*  display:flex;
+            justify-content: center;
+            align-items: center;
+            color:white;
+            font-size: 40px;*/
+
+        }
+        #Article2
+        {
+            
+            width:467.5px;
+            height:28.33vh;
+            margin-bottom: 5vh;
+            background-image: url(../Images/article2.png);
+            background-size: cover;
+           /* display:flex;
+            justify-content: center;
+            align-items: center;
+            color:white;
+            font-size: 40px;*/
+        } #Article3
+        {
+            
+            width:467.5px;
+            height:28.33vh;
+            background-image: url(../images/article3.png);
+            background-size: cover;
+           /* display:flex;
+            justify-content: center;
+            align-items: center;
+            color:white;
+            font-size: 40px;*/
+        }
+     
+        .section3
+        {
+            justify-content: center;
+            align-items: center;
+            text-align:  center;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            height: 200px;
+            margin-bottom: 15px;
+            display:flex;
+
+        }
+        .section3::after
+        {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        #rect
+        {
+            width: 21%;
+            height:auto;
+            border:solid white 8px;
+            border-radius:10px;
+            text-align:center;
+            margin:30px;
+    
+            float:left;
+            padding-bottom:20px;
+            background-color: rgb(175,173,173);
+            border:20px;
+           
+        }
+        .rect a
+        {
+            text-decoration: none;
+            background-color:red;
+            padding: 10px 100px 10px 100px;
+            border-radius:10px;
+            color:white;
+        }
+        .rect a:hover
+        {
+            background-color: blue;
+            text-decoration:solid;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .rect a:visited
+        {
+            background-color: violet;
+        }
+        
+        .box h3 {
+                color: blue;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bolder;
+            }
+            .box p {
+                width: 90%;
+                height: auto;
+                border-radius: 20px;
+                padding: 0px 10px 0px 10px;
+                margin-right: auto;
+                margin-left: auto;
+                overflow: hidden;
+                color: white;
+            }
+            .box img {
+                 width: 95%;
+                 height: 200px;
+                 border-radius: 20px;
+                padding: 5px 5px 0px 5px;
+                margin: 5px auto 0px auto;
+            }
+    
+        #footer
+        {
+            width:100%;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            background-color: lightslategray;
+            color:white;
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+        h1
+        {
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <div id="outer">
+        <div id="header">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">about us</a></li>
+                <li><a href="#"> team</a> </li>
+                <li><a href="#">technologies</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </div>
+        <div id="Banner"></div>
+        <h1>Team</h1>
+        <div id="section1">
+            <div id="box1"></div>
+            <div id="box2"></div>
+            <div id="box3"></div>
+            <div id="box4"></div>
+        </div>
+        <h1>Aboutus</h1>
+
+        <div id="section2">
+            <div id="leftside">
+                <h3 style="display: inline; background-color: red;">About</h3>
+                <br>
+                <p style="text-align: justify;padding: 15px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem placeat quasi illum ea repudiandae totam, voluptatibus perferendis, inventore eum veritatis impedit. Quia tenetur error eligendi cumque laudantium, doloribus qui? Eos sequi, dolor fugit doloribus vel quibusdam consequuntur natus suscipit? Tenetur facilis debitis eligendi, esse accusamus aliquam et, at soluta dignissimos sint corrupti sapiente, asperiores iure! Et molestias ducimus excepturi culpa nesciunt soluta ad cupiditate, dolorem quo sed nobis repellendus reprehenderit nulla voluptatum rerum inventore eum qui nisi assumenda, possimus officia porro repellat? Voluptatum numquam velit delectus error blanditiis fugit cumque dolor, expedita similique veritatis quos doloremque alias rerum nulla inventore ab iure assumenda officia quaerat sunt ipsum! Cumque quibusdam, aperiam illum quia, vero molestias aliquam ratione voluptas amet quisquam omnis hic dolores. Sit praesentium laborum commodi aperiam fugiat odit nobis mollitia ipsam vero reprehenderit ipsum labore laboriosam earum quasi natus, facilis officia dolor vitae, impedit repellat aut provident voluptate voluptatem illum. Aliquid ducimus ad fugit harum rerum doloribus soluta vitae ipsum hic rem corporis enim, nemo totam repellendus explicabo maiores consectetur sunt! Eveniet vel, amet consequatur asperiores porro voluptatem recusandae earum quam debitis molestias eum harum non atque culpa incidunt ullam veritatis cupiditate ad! Molestias totam itaque unde pariatur consectetur exercitationem aliquam porro nesciunt, architecto vero tempore optio autem quibusdam sed repellat delectus. Delectus, vero illum deleniti, dicta quis eos beatae ea tempore porro laborum voluptatum reiciendis nesciunt, veniam obcaecati voluptatem minus soluta assumenda distinctio aperiam voluptates ab dolor eius doloribus aspernatur. Suscipit voluptatum consectetur deleniti itaque perspiciatis dolores, quidem consequatur reprehenderit, voluptate similique vitae ex eveniet, quae esse libero expedita unde optio illo explicabo! Accusantium assumenda suscipit maxime blanditiis quas! Expedita suscipit eligendi minima modi, ullam possimus doloribus dolore molestiae veritatis! Eius debitis ad quis architecto adipisci error sapiente tempore accusantium blanditiis ducimus soluta commodi dolorem voluptas placeat laborum quasi, deleniti vitae aliquid voluptate. Harum magnam accusantium corporis, iure unde fugit tempore praesentium! Quod laboriosam maxime fugit, iure obcaecati, in error suscipit exercitationem minus sint dolores deleniti blanditiis assumenda. Optio maiores fuga corporis eaque dicta magni soluta perferendis nulla rerum, natus hic sed autem quia dolor sint magnam quas! Amet corporis excepturi animi nobis deleniti nostrum sed qui eos, minus laudantium consequuntur obcaecati distinctio impedit architecto quod magnam sit id ea porro beatae. Nulla atque impedit cumque, nesciunt sint expedita velit nobis, libero consectetur ullam minima eaque voluptatum excepturi amet et quos earum ratione officiis numquam? Eveniet, mollitia repudiandae, accusamus laudantium quasi doloribus dolore earum voluptates rerum corporis nostrum hic explicabo laborum consectetur perferendis. Quae, molestiae? Fugit aperiam sunt excepturi, at saepe nisi, quos blanditiis corporis, obcaecati reprehenderit tempore qui vitae. Illo illum quisquam molestias eligendi ab aut iure odit ducimus saepe consequatur, similique, ex ad veniam dicta corrupti ipsum animi dolorem voluptatibus debitis cupiditate rem est inventore. At officiis non quaerat repellendus sunt ipsa laborum nobis natus reprehenderit iste nam, similique doloremque asperiores veniam, corrupti distinctio eveniet voluptate? Maiores fuga eos, distinctio asperiores magnam repellendus natus praesentium molestias perferendis et facilis laboriosam impedit voluptates, debitis ad, id officia?</p>
+
+                </div>
+            <div id="rightside">
+                <div id="Article1"></div>
+                <div id="Article2"></div>
+                <div id="Article3"></div>
+            </div>
+        </div>
+        <h1>technologies</h1>
+        <div class="section3">
+            <div class="rect">
+                <img src="../Images/html logo.png" alt="html logo">
+                <h3>Introduction to Html</h3>
+                <p class="allign">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea non odio quibusdam quaerat minima. Dolorem totam consequuntur temporibus architecto numquam!</p>
+            <br>
+            <a href="html.html" target="_blank">Read more</a>
+            </div>
+
+            <div class="rect">
+                <img src="../Images/css logo.jpg" alt= "Css logo">
+                <h3>Introduction to css</h3>
+                <p class="allign">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem et nulla inventore neque repellendus quibusdam nisi tempore ut eveniet nam?</p>
+                <br>
+                <a href="css.html" target="_blank">Read more</a>
+            </div>
+            <div class="rect">
+                <img src="../Images/javascript.jpeg" alt="js logo">
+                <h3>Introduction to javascript</h3>
+                <p class="allign">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, ullam! Recusandae tempora aspernatur quibusdam omnis nisi, deserunt perspiciatis dicta libero? </p>
+                <br>
+                <a href="javascript.html"target="_blank">Read more</a>
+
+            </div>
+            <div class="rect">
+                <img src="../Images/bootstrap logo.jpg" alt="bbotstrap logo">
+                <h3>Introduction to bootstrap</h3>
+                <p class="allign">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis aspernatur non veniam, cumque aliquid ratione recusandae quos optio suscipit quidem?</p>
+                <br>
+                <a href="bootstrap.html" target="_blank">Read more</a>
+            </div>
+        </div>
+        <h1>Section-4</h1>
+        <div id="footer">Footer</div>
+    </div>
+    
+</body>
+</html>
