@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positon_property</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container
+        {
+            background-color: grey;
+            width:100vw;
+            height:100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        body{
+            height: 500vh;
+        }
+        .main
+        {
+            width:600px;
+            height:400px;
+            background-color: white;
+           padding: 10px;
+           position: relative;
+          /* position: sticky;
+           top:0px;*/
+
+           
+        }
+        .main img
+        {
+            width:300px;
+            height:200px;
+           /*position: relative; 
+            left:-200px;
+            position: absolute;by this it can    remove from his flow.
+            top:0px; it is  0 from top   by absolute .it can go outside from home but you want this will 
+             stay inside  in home then you have to home or parent will be relative. 
+            right:0px;
+            */
+            /*position:fixed;
+        
+            left:40%;*/
+            position:absolute;
+            top: 0px;
+            z-index: 2;
+           /* z-index: -20;*/
+
+
+
+            
+
+        }
+        .main h2
+        {
+          /* position: static; by default static hota hai means all element at   their fixed position.
+            top:100px;top se 100 nice a jay*/
+            
+          /*  margin-top: 100px;   from margin top our layout will destroy  means  bottom element will goes down*/
+         /* position: relative;from this you can move our content anywhere.*/
+         /* top:40px;from top of the content  it will goes down specified pixels.*/
+            position: absolute;
+            top: 0px;
+           z-index: 3;
+          /* z-index: -12;*/
+
+        }
+        .main p
+        {
+            position: absolute;
+            top: 0;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <h2>This is My Heading</h2>
+            <img src="../Images/bannerpic.png" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum labore sapiente reprehenderit in ea fugiat aliquam accusantium quos, quam quia magnam aut saepe eligendi, voluptas perferendis autem laboriosam placeat voluptatibus minima! Vitae aliquid eos sunt, labore eaque eius accusamus dolorem aut facilis iure reprehenderit nihil! Reprehenderit impedit nulla iusto. Corrupti?</p>
+        </div>
+    </div>
+    
+</body>
+</html>
