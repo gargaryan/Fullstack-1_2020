@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+    <title>Practical layout</title>
+    <style>
+
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;    
+        }
+        .container
+        {
+            width:100vw;
+            margin: auto;
+            max-width: 1200px;
+            
+        }
+        .header
+        {
+            width:100%;
+            height: 70px;
+            padding :10px;
+            background-color: grey;
+            margin-bottom: 20px;
+            position:fixed;
+            top:0;
+            
+        }
+        .header h2
+        {
+            line-height: 70px;
+            color:white;
+            font:40px;
+            float: left;
+            text-transform: uppercase;
+
+        }
+       .header .menu
+        {
+            list-style: none;
+            float: right;         
+        }
+
+
+        .menu li
+        {
+            display: inline-block;
+            line-height: 70px; 
+               
+            
+        }
+        .menu  li a
+        {
+            text-decoration: none;
+            color: white;
+            font: 40px;
+            margin:0 20px;
+            text-transform: uppercase;
+            transition: 0.4s;
+
+        }
+        .menu li a:hover, 
+        .show-btn:hover, .hide-btn:hover
+        {
+            color:skyblue;
+            background-color:white;
+            transition:1s;
+        }
+        .show-btn,.hide-btn
+        {
+            font-size: 30px;
+            line-height: 70px;
+            color: white;
+            display: none;
+
+        }
+        .show-btn
+        {
+            float: right;
+        }
+        #chk
+        {
+            visibility: hidden;
+            position: absolute;
+            z-index:-10;
+        }
+        
+
+        .banner
+        {
+            height: 600px;
+            width: 100%;
+            margin-bottom: 40px;
+        }
+        .banner
+        {
+            background-image:url(../Images/bannerpic.png);
+            background-size: cover;
+            background-repeat:no-repeat;   
+        }
+        .banner h1
+        {
+            color:white;
+            font: 70px;
+        }
+        h2{
+            text-align: center;
+            text-transform: uppercase;
+        }
+       .team
+       {
+           width: 100%;
+           height:250px;
+        
+           padding: 20px;
+           margin-bottom:40px;
+
+       }
+       .team  .circle img
+       {
+           width:150px;
+           height:150px;
+           border-radius:50%;
+           float :left;
+           margin-left:100px;          
+       }
+       .about
+       {
+           width: 100%;
+           height:530px;
+           margin-bottom: 40px;
+          
+
+       }
+       .about .leftside
+       {
+           width:40%;
+           height: 480px;
+           
+           padding: 10px;
+           text-align: justify;
+           overflow: hidden;
+           
+           float: left;
+           background-color:grey;
+       }
+       .about .rightside
+       {
+           width:58%;
+           height: 480px;
+           
+           float: right;
+
+       }
+       .rightside .article
+       {
+           margin-bottom:10px;
+       }
+       
+       .Technologies 
+       {
+           width:100%;
+           height:440px;
+         
+           padding: 10px;
+           margin-bottom: 40px;
+       }
+       .Technologies .box
+       {
+          border:solid 5px grey;
+           width: 270px;
+           height:380px;
+           margin-left:20px;
+           float: left;
+           padding:10px;
+       } 
+       .box img
+       {
+           border-radius: 5px;
+           margin-bottom:10px;
+           
+       }
+       .box a
+       {
+           display:block;
+           width:100%;
+           padding:10px;
+           color: white;
+           font: 20px;
+           text-decoration:none;
+           background-color: red;
+           text-align: center;
+           border-radius: 8px;
+
+        }
+        .box a:hover
+        {
+            background-color: blue;
+        }
+        .box h3{
+            text-align: center;
+        }
+        .footer
+        {
+            width: 100%;
+            height:70px;
+            background-color: hotpink;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            font:20px;
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        .footer a
+        {
+            display:block;
+            text-align: center;
+        }
+        @media(min-width: 801px) and (max-width: 1180px)
+        {
+            .container
+            {
+                width: 100%;
+            
+
+            }
+            .banner
+            {
+            height: 600px;
+            width: 100%;
+            margin-bottom: 40px;
+            }
+            .banner
+            {
+            background-image:url(../Images/bannerpic.png);
+            background-size: cover;
+            background-repeat:no-repeat;  
+            margin-bottom:40px; 
+            }
+            .banner h1
+            {
+            color:white;
+            font: 100px;
+             }
+            h2
+            {
+            text-align:50%;
+            text-transform: uppercase;
+            font-size: 20px;
+            }
+            .team
+            {
+                width: 100%;
+                height:600px;
+           
+                margin-bottom:40px;
+
+            }
+        
+            .team  .circle img
+            {
+             width:250px;
+            height:250px;
+            border-radius:50%;
+            float :left;
+            margin-left:15%; 
+            margin-bottom:20px;         
+            }
+            .header
+            {
+            width:100%;
+            height: 70px;
+            padding :0 20px;
+            background-color: grey;
+            margin-bottom: 20px;
+            position: fixed;
+            
+            }
+            .header h2
+            {
+            line-height: 70px;
+            color:white;
+            font:40px;
+            float: left;
+            text-transform: uppercase;
+
+            }
+            .Technologies 
+             {
+             width:100%;
+             height:800px;
+             padding: 10px;
+             margin-bottom:40px;
+            }
+            .Technologies .box
+             {
+                border:solid 5px grey;
+                width: 270px;
+                height:380px;
+                margin-left:12%;
+                margin-bottom: 20px;
+                float: left;
+                padding:10px;
+        } 
+        .about
+       {
+           width: 100%;
+           height:530px;
+           margin-bottom: 40px;
+          
+
+       }
+       .about .leftside
+       {
+           width:40%;
+           height: 480px;
+           
+           padding: 10px;
+           text-align: justify;
+           overflow: hidden;
+           
+           float: left;
+           background-color:grey;
+       }
+       .about .rightside
+       {
+           width:58%;
+           height: 480px;
+           
+           float: right;
+
+       }
+       .rightside .article
+       {
+           margin-bottom:10px;
+       }
+
+      
+
+        
+         
+        }
+        @media (max-width: 800px)
+        {
+            .header
+            {
+            width:100%;
+            height: 70px;
+            padding :0 20px;
+            background-color: grey;
+            margin-bottom: 20px;
+            position: fixed;
+            top: 0;
+            
+            }
+            .header h2
+            {
+            line-height: 70px;
+            color:white;
+            font:40px;
+            float: left;
+            text-transform: uppercase;
+
+            }
+      
+
+        
+            .show-btn,.hide-btn
+             {
+            
+            
+                display: block;
+             }
+            .hide-btn
+            {
+            position:absolute;
+            top:10px;
+            right:30px;
+            }
+            .show-btn
+            {
+                float: right;
+            }
+            .menu
+            {
+                position: absolute;
+                top:0;
+                right:-100%;
+                width:100%;
+                height:100Vh;
+                background: black;
+                text-align: center;
+                color: white;
+                line-height: normal;
+                transition: 1s;
+                padding: 80px 0px;
+        
+            #chk:checked~.menu
+             {
+                    right:0;
+             }
+            .menu li
+             {
+                 display: block;
+             }
+
+        }  
+
+        
+
+
+       
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>study hub</h2>
+            <input type="checkbox"   id="chk">
+            <label for="chk" class="show-btn">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+
+            </label>
+           <div class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Team">Team</a></li>
+                <li><a href="#Technologies">Technologies</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+            <label for="chk" class="hide-btn">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+
+
+            </div>
+        </div>
+        <div class="banner"> 
+            <h1>Practical-9</h1>
+        </div>
+        
+        <a name="Team"></a>
+        <h1 style="text-align:center">Team</h1>
+        <div class="team">
+            
+        
+            <div class="circle">
+                <img src="../Images/box1.png" alt="">
+            </div>
+            <div class="circle">
+                <img src="../Images/box2.png" alt="">
+            </div>
+            <div class="circle">
+                <img src="../Images/box3.png" alt="">
+            </div>
+            <div class="circle">
+                <img src="../Images/box4.png" alt="">
+            </div>
+
+        </div>
+        <a name="About"></a>
+        <h1 style="text-align:center">About</h1>
+        <div class="about" >
+            
+            <div class="leftside"> 
+                <h2>About us</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius ratione in recusandae aperiam corporis. Error, obcaecati veniam! Nam soluta ullam architecto quis laboriosam deserunt minus commodi cum, dolorum nemo praesentium optio neque, nobis repudiandae nulla cupiditate mollitia impedit, in qui culpa rem maxime excepturi deleniti? Tempora quos quis, est porro non ratione molestias eveniet iure fugiat aperiam provident dolores praesentium! Libero consequatur pariatur esse accusamus, itaque officiis ipsa doloremque dolorum quam porro cum dolorem quibusdam quia possimus dignissimos debitis magnam, atque reiciendis, praesentium veritatis sint impedit excepturi! Tempore voluptas dignissimos facilis itaque numquam dolorum debitis quod distinctio adipisci, doloremque a iusto quae autem omnis minima praesentium fugit asperiores? Porro consectetur sunt consequatur cupiditate deleniti? Recusandae tempora et ratione! Recusandae, id? Fugit voluptatibus illum doloribus quod quas. Sequi, debitis magnam et ipsum velit mollitia quidem dolores, dolor asperiores ea tenetur dignissimos, eaque illo eius natus ut cupiditate. Tenetur sequi optio molestias at? Excepturi eligendi sint mollitia asperiores repellendus ex odio ut iure ab dicta nemo, totam veritatis aut. Consectetur quam sunt nihil repellendus neque quidem omnis eius velit, veritatis, odio deserunt voluptatibus quibusdam id quos blanditiis qui aspernatur veniam alias. Maxime corporis perferendis vel natus commodi officia expedita incidunt obcaecati id.</p>
+            </div>
+
+             <div class="rightside">
+                <div class="article">
+                    <img src="../Images/artical1.png" alt="" width="100%" height="143.3" >
+                </div>
+                <div class="article">
+                    <img src="../Images/article2.png" alt="" width="100%" height="143.3">
+                </div>
+                <div class="article">
+                    <img src="../Images/article3.png" alt=" " width="100%" height="153.3">
+                </div>
+            </div>
+          </div>
+          
+          <a name="Technologies"></a>
+          <div class="Technologies">
+            <h2 style="b">Technologies</h2>
+            <br>
+            <div class="box">
+                <img src="../Images/html logo.png" alt="" width="100%">
+                <h3>Intoduction to Html</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nemo hic veniam harum quo eveniet sequi ipsum nobis consequatur maxime!</p>
+                <br>
+                <a href="html.html">Read more</a>
+            </div>
+            <div class="box">
+                <img src="../Images/css logo.jpg" alt="" width="100%">
+                <h3>Introduction to css</h3>
+                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus atque incidunt consectetur accusamus in earum reprehenderit similique, et inventore unde!</p>
+                  <br>
+                 <a href="css.html">Read More</a>
+                </div>
+            <div class="box">
+                <img src="../Images/javascript.jpeg" alt="" width="100%" height="160px">
+                <h3>Introduction to javascript</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto id laudantium laboriosam, exercitationem et voluptatem aliquam animi totam vitae unde.</p>
+                <br>
+                <a href="javascript.html">Read more</a>
+            </div>
+            <div class="box">
+               <img src="../Images/bootstrap logo.jpg" alt="" width="100%">
+                <h3>Introduction to bootstrap</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto id laudantium laboriosam, exercitationem et voluptatem aliquam animi totam vitae unde.</p>
+                <br>
+                <a href="bootstrap.html">Read more</a>
+            </div>
+        </div>
+        <a name="contact"></a>
+        <h1 style="text-align: 50%;">Contact</h1>
+        <div class="footer">
+           
+            <P>website Template for StudyHub @copy;
+            <a href="#">Backtotop</a>
+            </P>
+           
+        </div>
+    </div>    
+</body>
+</html>
