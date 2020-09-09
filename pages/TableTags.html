@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TableTags</title>
+    <style>
+        table
+        {
+            border-collapse: collapse;
+            background-color:rgb(205, 238, 144);
+        
+        }
+        th
+        {
+            background-color:grey;
+            color:white;
+        }
+        tfoot tr
+        {
+            background-color:lightgrey !important;
+        }
+        tr:nth-child(even)
+        {
+            background-color:white;
+        }
+        tr:nth-child(odd)
+        {
+            background-color: seagreen;
+        }
+
+      
+        table,td,tr,th
+        {
+            border:1px solid;
+            padding:10px;
+            text-align:center;/*allign content center*/
+        }
+       /* caption
+        {
+            caption-side: bottom;
+            color: red;
+        }*/
+
+    </style>
+</head>
+<body>
+    <table width="800px" align="center">
+        <caption>List of courses</caption>
+        <colgroup>
+            <col span="2"  style="background-color: lightgrey">
+            <col  style="background-color: yellowgreen">
+        
+        </colgroup>
+        <thead>
+        <tr>
+            <th>Course Name</th>
+            <th>Course Duration</th>
+            <th>Course price</th>
+            
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Programming Langugages</td>
+            <td>2 Months</td>
+            <td>Rs.2000/-</td>
+
+        </tr>
+        <tr>
+            <td>web Development</td>
+            <!--add to whole column -->
+            <td width="100px">4 Months</td>
+            <td>Rs.15000/-</td>
+
+        </tr>
+        <tr>
+            <td>sie programming</td>
+            <td>6 Months</td>
+            <td>Rs.25000/-</td>
+
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+    
+            <td colspan="2">Total Cost</td>
+            <td>Rs.45000/-</td>
+
+        </tr>
+        </tfoot>
+    </table>
+    
+</body>
+</html>
