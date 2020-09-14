@@ -1,0 +1,515 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.main-content
+{
+    width: 100%;
+    height: 100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:30px;
+    color: gray;
+    
+}
+footer
+{
+    width:100%;
+    background-color:#26272b; 
+    
+}
+.sec1
+
+{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    padding: 10px;
+    width:100%;
+    
+}
+.About
+{
+    width:40%;
+}
+.About p
+{
+    text-align: justify;
+    color: lightgray;
+    line-height: 26px;
+    
+}
+.sec1 h2
+{
+    font-size :18px;
+    color:white;
+    text-transform: uppercase;
+    line-height: 50px;
+}
+    
+ .sec1 ul
+{
+    list-style: none;
+}
+a
+{
+    text-decoration: none;
+    color:lightgray;
+}
+a:hover
+{
+    color:orangered;
+}
+span
+{
+    color:lightgray;
+}
+i
+{
+    color: grey;
+    margin-right: 10px;
+}
+.sec2
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10px;
+    width: 100%;
+    
+}
+.sec2 p
+{
+    color: lightgray;
+    padding: 0px;
+    font-size: 24px;
+   
+}
+.sec2 a
+{
+    display: inline-block;
+    color: white;
+    padding:10px 10px;
+    margin-left: 10px;
+    background-color: red;
+    font-size: 20px;
+    border-radius: 20px;
+
+}
+.sec2 a:hover
+{
+    background-color:orange;
+}
+.sec3
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+   
+
+}
+.sec3 ul
+{
+    list-style: none;
+    margin: 20px;
+}
+.sec3 ul li
+{
+    display: inline-block;
+    width:60px;
+    height: 60px;
+    border-radius: 50%;
+    padding: 20px;
+    margin:20px;
+    background-color: #424242;
+}
+
+.sec3 ul li i
+{
+    font-size: 24px;
+    line-height: 20px;
+
+}
+.sec3 ul li:nth-child(1):hover
+{
+    background-color: #3b5999;
+}
+.sec3 ul li:nth-child(2):hover
+{
+    background-color: #55acee;
+}.sec3 ul li:nth-child(3):hover
+{
+    background-color: #dd4b39;
+}
+.sec3 ul li:nth-child(4):hover
+{
+    background-color: #0077B5;
+}
+.sec3 ul li:nth-child(5):hover
+{
+    background-color: #00AFF0;
+}
+.sec4
+{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    padding: 20px;
+    width: 100%;
+}
+.sec4 p
+{
+    color: grey;
+    position: relative;
+    
+}
+.sec4 p::after
+{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    right: 0;
+    position: absolute;
+    bottom: -10px;
+    background-color: yellow;
+    transition: all .3s;
+    
+}
+.sec4 p:hover::after
+{
+    width:100%;
+   
+
+}
+hr
+{
+    opacity: 0.2;
+}
+@media (max-width:767px)
+{
+    .main-content
+{
+    width: 100%;
+    height: 100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:30px;
+    color: gray;
+    
+}
+footer
+{
+    width:100%;
+    background-color:#26272b; 
+    
+}
+.sec1
+
+{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    
+}
+.About
+{
+    width:100%;
+    margin-bottom: 20px;
+}
+.About p
+{
+    text-align: justify;
+    color: lightgray;
+    line-height: 26px;
+    
+}
+.sec1 h2
+{
+    font-size :18px;
+    color:white;
+    text-transform: uppercase;
+    line-height: 50px;
+}
+    
+ .sec1 ul
+{
+    list-style: none;
+}
+a
+{
+    text-decoration: none;
+    color:lightgray;
+}
+a:hover
+{
+    color:orangered;
+}
+span
+{
+    color:lightgray;
+}
+i
+{
+    color: grey;
+    margin-right: 10px;
+}
+.sec2
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10px;
+    
+}
+.sec2 p
+{
+    color: lightgray;
+    padding: 0px;
+    font-size: 24px;
+   
+}
+.sec2 a
+{
+    display: inline-block;
+    color: white;
+    padding:10px 10px;
+    margin-left: 10px;
+    background-color: red;
+    font-size: 20px;
+    border-radius: 20px;
+
+}
+.sec2 a:hover
+{
+    background-color:orange;
+}
+.sec3
+{
+    display:flex;
+    justify-content: center;
+   
+
+}
+.sec3 ul
+{
+    list-style: none;
+    margin: 20px;
+}
+.sec3 ul li
+{
+    display: inline-block;
+    width:60px;
+    height: 60px;
+    border-radius: 50%;
+    padding: 20px;
+    margin:20px;
+    background-color: #424242;
+}
+
+.sec3 ul li i
+{
+    font-size: 24px;
+    line-height: 20px;
+
+}
+.sec3 ul li:nth-child(1):hover
+{
+    background-color: #3b5999;
+}
+.sec3 ul li:nth-child(2):hover
+{
+    background-color: #55acee;
+}.sec3 ul li:nth-child(3):hover
+{
+    background-color: #dd4b39;
+}
+.sec3 ul li:nth-child(4):hover
+{
+    background-color: #0077B5;
+}
+.sec3 ul li:nth-child(5):hover
+{
+    background-color: #00AFF0;
+}
+.sec4
+{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    padding: 20px;
+}
+.sec4 p
+{
+    color: grey;
+    position: relative;
+    
+}
+.sec4 p::after
+{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    right: 0;
+    position: absolute;
+    bottom: -10px;
+    background-color: yellow;
+    transition: all .3s;
+    
+}
+.sec4 p:hover::after
+{
+    width:100%;
+   
+
+}
+hr
+{
+    opacity: 0.2;
+}
+}
+@media (max-width:520px)
+{
+    .main-content
+    {
+        width: 100%;
+        height: 100px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        font-size:30px;
+        color: gray;
+        
+    }
+    footer
+    {
+        width:100%;
+        background-color:#26272b; 
+        
+    }
+    .sec1
+    
+    {
+        display: block;
+        
+        
+        padding: 10px;
+        
+    }
+    .About
+    {
+        width:100%;
+        margin-bottom: 20px;
+    }
+    .About p
+    {
+        text-align: justify;
+        color: lightgray;
+        line-height: 26px;
+        
+    }
+   .links1,.links2,.links3
+   {
+       text-align: center;
+       margin-bottom: 20px;
+    
+   }
+    .sec1 h2
+    {
+        font-size :18px;
+        color:white;
+        text-transform: uppercase;
+        line-height: 50px;
+    }
+        
+     .sec1 ul
+    {
+        list-style: none;
+    }
+    a
+    {
+        text-decoration: none;
+        color:lightgray;
+    }
+    a:hover
+    {
+        color:orangered;
+    }
+    span
+    {
+        color:lightgray;
+    }
+    i
+    {
+        color: grey;
+        margin-right: 10px;
+    }
+    .sec3
+{
+    display:flex;
+    justify-content: center;
+   
+
+}
+.sec3 ul
+{
+    list-style: none;
+    margin: 10px;
+}
+.sec3 ul li
+{
+    display: inline-block;
+    width:40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 10px;
+    margin:10px;
+    background-color: #424242;
+}
+
+.sec3 ul li i
+{
+    font-size: 18px;
+    line-height: 20px;
+
+}
+.sec3 ul li:nth-child(1):hover
+{
+    background-color: #3b5999;
+}
+.sec3 ul li:nth-child(2):hover
+{
+    background-color: #55acee;
+}.sec3 ul li:nth-child(3):hover
+{
+    background-color: #dd4b39;
+}
+.sec3 ul li:nth-child(4):hover
+{
+    background-color: #0077B5;
+}
+.sec3 ul li:nth-child(5):hover
+{
+    background-color: #00AFF0;
+}
+}
+ 
+
+
+
+
+
+
+
+    
+    

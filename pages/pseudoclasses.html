@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudoclass</title>
+    <style>
+         p:nth-child(2)/*2nd child of paraghraph which is empty become red*/
+        
+        {
+            background-color: red;
+            width: 20%;
+            height:30px;
+        }
+        p:nth-child(3)
+        {
+            background-color:brown;
+           
+        }
+         p:empty /* empty paragraph */
+        {
+            background-color:green;
+        }
+        /* p:first-child:::first-letter*/
+        /*  or we can do it */
+         p#para1::first-letter/* first letter of paragaroh having id para1*/
+        {
+            font-size: 30px;
+            color: royalblue;
+        }
+      /*  p#para5::first-line first line of paragraph having  id para3 backgriund changed to saddlebrown*/
+        p:last-child::first-letter
+        {
+           color:green;
+           font-size:20%;
+        }
+
+    </style>
+</head>
+<body>
+    <body>
+        <div class="container">
+            <p id="para1"> This is a paragraph</p>
+             <p></p>
+             <P>This is a paragraph</P>
+             <p>This is  a paragarapgh</p>
+             <div>
+                 <p id="para5">This is paragraph</p>
+             </div>
+        </div>
+    </body>
+</body>
+</html>
