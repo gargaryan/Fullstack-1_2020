@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: repeating-linear-gradient(lightgreen 10%,lightseagreen 20%);
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            margin-top: 100px;
+            font-size: 70px;
+        }
+       
+
+        button {
+            background-image: repeating-linear-gradient(lightgreen 10%,lightseagreen 20%);
+            width: 60px;
+            height: 60px;
+            margin: auto;
+            margin-left: 530px;
+            border-color:black;
+        }
+        #pos{
+            margin-left: 70px;
+            border-color:black;
+        }
+        #neg{
+            color:black;
+            font-size: 20px;
+            border-color:black;
+            padding:5px;
+        }
+            
+
+        input {
+            position: relative;
+            left: 45px;
+            width: 50px;
+            top:10px;
+            background-image: repeating-linear-gradient(lightgreen 10%,lightseagreen 20%);
+            font-size: 40px;
+            color: red;
+            border: 0;
+            padding: 7.5px ;
+            border-color:black;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h1>COUNTER</h1>
+
+   <div class="container">
+    <button id="neg" > - </button>
+    <input type="text" id="quantity" readonly="" value="0">
+    <button id="pos"> + </button>
+   </div>
+
+
+    <script>
+
+        var add = document.getElementById("pos");
+        var sub = document.getElementById("neg");
+        var qty = document.getElementById("quantity");
+
+        sub.setAttribute("disabled", "disabled");
+
+
+        add.addEventListener('click', () => {
+            var valuecount = parseInt(qty.value) + 1;
+            qty.value = valuecount;
+
+
+            if (valuecount >= 1) {
+                sub.removeAttribute("disabled", "disabled");
+            }
+
+        });
+
+
+        sub.addEventListener('click', () => {
+            var valuecount = parseInt(qty.value) - 1;
+            qty.value = valuecount;
+
+
+            if (valuecount == 0) {
+                sub.setAttribute("disabled", "disabled");
+            }
+
+        });
+
+
+    </script>
+
+</body>
+
+</html>
